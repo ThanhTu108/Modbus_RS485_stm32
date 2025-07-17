@@ -1,5 +1,6 @@
 #include "master_slave.h"
 
+//your uart you want
 extern UART_HandleTypeDef huart3;
 uint16_t ModbusRegister_Slave[Number_of_register];
 uint16_t ModbusRegister_Master[Number_of_register];
