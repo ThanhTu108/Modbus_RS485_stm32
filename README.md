@@ -1,4 +1,6 @@
 # Example to use
+
+You must define Gpio DE/RE, Uart? in lib
   ModbusRegister_Slave[0] = 200;
   ModbusRegister_Slave[1] = 111;
   ModbusRegister_Slave[2] = 111;
