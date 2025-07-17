@@ -7,6 +7,7 @@
 #include "main.h"
 #include "string.h"
 
+//Define your id
 #define Slave_id 3
 #define Number_of_register 10
 #define Number_of_coil 16
@@ -24,12 +25,12 @@ extern uint8_t uartPacketComplatedFlag;
 extern char ModbusRx[Buffersize];
 enum
 {
-	ReadCoil = 0x01,						//doc trang thai 1 bit 
-	ReadHoldingRegister = 0x03,	//doc gia tri holding regrister (16 bit)
-	WriteSingleCoil = 0x05,			//ghi gia tri 1 bit
-	WriteSingleRegister = 0x06,	//ghi gia tri holding regrister (16 bit)
-	WriteMultipleCoils = 0x0F,	//ghi gia tri (1 bit) (nhieu bien)
-	WriteMultipleRegisters = 0x10,	//ghi gia tri 16 bit vao nhieu holding regrister (16 bit)	
+	ReadCoil = 0x01,					
+	ReadHoldingRegister = 0x03,	
+	WriteSingleCoil = 0x05,		
+	WriteSingleRegister = 0x06,	
+	WriteMultipleCoils = 0x0F,	
+	WriteMultipleRegisters = 0x10,		
 };
 
 typedef enum {
