@@ -40,3 +40,6 @@ HAL_UART_Receive_IT(&huart3, &uartRxData , 1);
 
 
   Put uartTimer() into systick_handler() in it.c
+If you only want use 1 function 
+(Slave: you should put uartDataHandler() in while true and define your id, mode = S_Mode in main)
+(Master: put any func like: Modbus_ReadHoldingRegister(slave id, start addr , number of register))
