@@ -5,12 +5,12 @@
   ModbusRegister_Slave[3] = 0;
   ModbusRegister_Slave[4] = 103;
   ModbusRegister_Slave[5] = 6;
-	ModbusRegister_Slave[6] = 4;
+  ModbusRegister_Slave[6] = 4;
   ModbusRegister_Slave[7] = 5;
   ModbusRegister_Slave[8] = 6;
-	ModbusRegister_Slave[9] = 4;
+  ModbusRegister_Slave[9] = 4;
 
-	HAL_UART_Receive_IT(&huart3, &uartRxData , 1);
+HAL_UART_Receive_IT(&huart3, &uartRxData , 1);
 
   while (1)
   {
