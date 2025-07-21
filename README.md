@@ -7,19 +7,19 @@
 *  ModbusRegister_Slave[2] = 111;			
 *  HAL_UART_Receive_IT(&huart3, &uartRxData , 1);
 
-*  while (1)
-*  {
-* 		if(mode == S_Mode)
-* 		{
-* 			uartDataHandler();
-*		}
-*		else if(mode == M_Mode)
-*		{
-*			Modbus_WriteSingleRegister(2, 3, 10);
-*			Modbus_ReadHoldingRegister(2,0,5);
-*		}
-*		val[0] = ModbusRegister_Master[0];
-*  }
+*/  while (1)
+  {
+ 		if(mode == S_Mode)
+ 		{
+ 			uartDataHandler();
+		}
+		else if(mode == M_Mode)
+		{
+			Modbus_WriteSingleRegister(2, 3, 10);
+			Modbus_ReadHoldingRegister(2,0,5);
+		}
+		val[0] = ModbusRegister_Master[0];
+/*  }
 
 
   ** Put uartTimer() into systick_handler() in it.c
