@@ -4,8 +4,8 @@
 
 *  ModbusRegister_Slave[0] = 200;
 *  ModbusRegister_Slave[1] = 111;
-*  ModbusRegister_Slave[2] = 111;			
-*  HAL_UART_Receive_IT(&huart3, &uartRxData , 1);
+$  ModbusRegister_Slave[2] = 111;			
+$  HAL_UART_Receive_IT(&huart3, &uartRxData , 1);
 
 
 *  while (1)
